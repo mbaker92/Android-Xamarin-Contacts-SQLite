@@ -41,11 +41,36 @@ namespace ContactSQL
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f040001
+			public const int AddContactButton = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int ContactNameView = 2130968578;
+			
+			// aapt resource value: 0x7f040000
+			public const int textView1 = 2130968576;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Main = 2130837504;
+			public const int CreateContact = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Main = 2130837505;
 			
 			static Layout()
 			{
