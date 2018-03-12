@@ -50,5 +50,10 @@ namespace ContactSQL.Classes
             return adapter;
         }
 
+        public string GetDBPath()
+        {
+            return DBPath;
+        }
+
     }
 }

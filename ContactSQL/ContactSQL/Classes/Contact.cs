@@ -32,19 +32,32 @@ namespace ContactSQL.Classes
         public string PhoneNum { get; set; }
         public string Email { get; set; }
         
+        // Default Constructor
         public Contact()
         {
-            Name = "Unknown";
+            
         }
+
+        // Constructor for just name
         public Contact(string name)
         {
             Name = name;
         }
-        public Contact(string name, string phone)
+
+        // Constructor with name and contactInfo
+        public Contact(string name, string ContactInfo, int Type)
         {
             Name = name;
-            PhoneNum = phone;
+            if (Type == 0)
+            {
+                PhoneNum = ContactInfo;
+            }else if (Type == 1)
+            {
+                Email = ContactInfo;
+            }
         }
+
+        // Constructor with name, phone, and email
         public Contact(string name, string phone, string email)
         {
             Name = name;
@@ -52,9 +65,28 @@ namespace ContactSQL.Classes
             Email = email;
         }
 
-        public string GetName(string Database)
+        // Get DBName
+        public string GetDBName(string Database)
         {
             return Database;
+        }
+
+        // SetName
+        public void SetName(string name)
+        {
+            Name = name;
+        }
+
+        // SetPhone
+        public void SetPhone(string Phone)
+        {
+            PhoneNum = Phone;
+        }
+
+        // SetEmail
+        public void SetEmail(string email)
+        {
+            Email = email;
         }
 
     }

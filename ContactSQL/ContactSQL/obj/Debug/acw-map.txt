@@ -1,0 +1,8 @@
+ContactSQL.CreateContact, ContactSQL;md57ebb745c2a3716b5de6defe923b053c9.CreateContact
+ContactSQL.CreateContact, ContactSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57ebb745c2a3716b5de6defe923b053c9.CreateContact
+ContactSQL.CreateContact;md57ebb745c2a3716b5de6defe923b053c9.CreateContact
+contactsql.CreateContact;md57ebb745c2a3716b5de6defe923b053c9.CreateContact
+ContactSQL.MainActivity, ContactSQL;md57ebb745c2a3716b5de6defe923b053c9.MainActivity
+ContactSQL.MainActivity, ContactSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57ebb745c2a3716b5de6defe923b053c9.MainActivity
+ContactSQL.MainActivity;md57ebb745c2a3716b5de6defe923b053c9.MainActivity
+contactsql.MainActivity;md57ebb745c2a3716b5de6defe923b053c9.MainActivity

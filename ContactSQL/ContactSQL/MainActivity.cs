@@ -44,10 +44,11 @@ namespace ContactSQL
             {
                 StartIntent();
             };
+            ContactList.Adapter = TempUser.GetContactNames(ref ContactNames);
             
         }
 
-
+ 
         protected override void OnDestroy()
         {
             Classes.InitialController.Save(TempUser);
