@@ -22,6 +22,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
+using System.Collections.ObjectModel;
 
 namespace ContactSQL.Classes
 {
@@ -37,7 +38,7 @@ namespace ContactSQL.Classes
         }
 
 
-        public ArrayAdapter<string> GetContactNames(ref List<string> temp)
+        public ArrayAdapter<string> GetContactNames(ref ObservableCollection<string> temp)
         {
             var db = new SQLiteConnection(DBPath);
             var NameList = db.Query<Classes.Contact>("Select Name From Contact");

@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>3/11/2018 5:06:17 PM</xs:documentation>
+    <xs:documentation>3/13/2018 6:54:06 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16660,8 +16660,21 @@
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkBox1" />
             <xs:enumeration value="@id/AddContactButton" />
+            <xs:enumeration value="@id/ContactComfirmButton" />
+            <xs:enumeration value="@id/ContactNameText" />
             <xs:enumeration value="@id/ContactNameView" />
-            <xs:enumeration value="@id/textView1" />
+            <xs:enumeration value="@id/EditContactButton" />
+            <xs:enumeration value="@id/EmailField" />
+            <xs:enumeration value="@id/EmailLabel" />
+            <xs:enumeration value="@id/EmailText" />
+            <xs:enumeration value="@id/EmailView" />
+            <xs:enumeration value="@id/NameField" />
+            <xs:enumeration value="@id/NumberField" />
+            <xs:enumeration value="@id/NumberText" />
+            <xs:enumeration value="@id/PhoneLabel" />
+            <xs:enumeration value="@id/PhoneView" />
+            <xs:enumeration value="@id/space1" />
+            <xs:enumeration value="@id/space2" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />

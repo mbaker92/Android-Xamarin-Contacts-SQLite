@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space1"
+        android:layout_marginBottom="10dip" />
+    <TextView
+        android:text="Phone Number :"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PhoneLabel" />
+    <TextView
+        android:text="000-000-0000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PhoneView"
+        android:paddingLeft="15dip"
+        android:layout_marginTop="4dip" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space2"
+        android:layout_marginBottom="20dip" />
+    <TextView
+        android:text="Email Address :"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailLabel" />
+    <TextView
+        android:text="Email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailView"
+        android:paddingLeft="15dip"
+        android:layout_marginTop="4dip" />
+    <Button
+        android:text="Edit Contact"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditContactButton"
+        android:layout_marginTop="30dip"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

@@ -56,11 +56,20 @@ namespace ContactSQL
 			// aapt resource value: 0x7f040008
 			public const int ContactNameView = 2130968584;
 			
+			// aapt resource value: 0x7f04000f
+			public const int EditContactButton = 2130968591;
+			
 			// aapt resource value: 0x7f040005
 			public const int EmailField = 2130968581;
 			
+			// aapt resource value: 0x7f04000d
+			public const int EmailLabel = 2130968589;
+			
 			// aapt resource value: 0x7f040004
 			public const int EmailText = 2130968580;
+			
+			// aapt resource value: 0x7f04000e
+			public const int EmailView = 2130968590;
 			
 			// aapt resource value: 0x7f040001
 			public const int NameField = 2130968577;
@@ -70,6 +79,18 @@ namespace ContactSQL
 			
 			// aapt resource value: 0x7f040002
 			public const int NumberText = 2130968578;
+			
+			// aapt resource value: 0x7f04000a
+			public const int PhoneLabel = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int PhoneView = 2130968587;
+			
+			// aapt resource value: 0x7f040009
+			public const int space1 = 2130968585;
+			
+			// aapt resource value: 0x7f04000c
+			public const int space2 = 2130968588;
 			
 			static Id()
 			{
@@ -89,6 +110,9 @@ namespace ContactSQL
 			
 			// aapt resource value: 0x7f020001
 			public const int Main = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int ViewContact = 2130837506;
 			
 			static Layout()
 			{

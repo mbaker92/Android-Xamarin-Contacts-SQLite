@@ -28,6 +28,7 @@ D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\ContactSQL.dll.mdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\android\assets\ContactSQL.dll.mdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\android\assets\SQLiteNetExtensions.dll.mdb
+D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\res\layout\viewcontact.xml
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\ContactSQL.dll
 bin\Debug\SQLiteNetExtensions.dll.mdb
 bin\Debug\Mono.Android.pdb

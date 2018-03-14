@@ -55,6 +55,13 @@ namespace ContactSQL
             base.OnDestroy();
         }
 
+        public override void OnBackPressed()
+        {
+            var intent = new Intent(this, typeof(MainActivity));
+            intent.AddFlags(ActivityFlags.ClearTop);
+            StartActivity(intent);
+        }
+
 
         private void AddContact()
         {

@@ -14,6 +14,7 @@ using Android.Content;
 using System;
 using System.Collections.Generic;
 using SQLite;
+using System.Collections.ObjectModel;
 
 namespace ContactSQL
 {
@@ -21,8 +22,9 @@ namespace ContactSQL
     [Activity(Label = "ContactSQL", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        private ArrayAdapter<string> MyAdapater;
         private Classes.User TempUser;
-        private List<string> ContactNames = new List<string>();
+        private ObservableCollection<string> ContactNames = new ObservableCollection<string>();
         private ListView ContactList;
         private Button AddBut;
         protected override void OnCreate(Bundle savedInstanceState)
@@ -44,10 +46,20 @@ namespace ContactSQL
             {
                 StartIntent();
             };
-            ContactList.Adapter = TempUser.GetContactNames(ref ContactNames);
-            
-        }
 
+            MyAdapater = TempUser.GetContactNames(ref ContactNames);
+            ContactList.Adapter = MyAdapater;
+
+            
+          //  ContactNames.CollectionChanged += new System.Collections.Specialized.NotifyCollectionChangedEventHandler(ContactAdded);
+
+        }
+        /*
+        private void ContactAdded(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            ContactList.Adapter = TempUser.GetContactNames(ref ContactNames);
+        }
+        */
  
         protected override void OnDestroy()
         {
@@ -63,6 +75,7 @@ namespace ContactSQL
             Classes.InitialController.Save(TempUser);
             StartActivity(intent);
         }
+
 
 
         private void CheckFirstRun()
