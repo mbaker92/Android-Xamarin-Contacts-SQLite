@@ -6,3 +6,7 @@ ContactSQL.MainActivity, ContactSQL;md57ebb745c2a3716b5de6defe923b053c9.MainActi
 ContactSQL.MainActivity, ContactSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57ebb745c2a3716b5de6defe923b053c9.MainActivity
 ContactSQL.MainActivity;md57ebb745c2a3716b5de6defe923b053c9.MainActivity
 contactsql.MainActivity;md57ebb745c2a3716b5de6defe923b053c9.MainActivity
+ContactSQL.ViewCon, ContactSQL;md57ebb745c2a3716b5de6defe923b053c9.ViewCon
+ContactSQL.ViewCon, ContactSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57ebb745c2a3716b5de6defe923b053c9.ViewCon
+ContactSQL.ViewCon;md57ebb745c2a3716b5de6defe923b053c9.ViewCon
+contactsql.ViewCon;md57ebb745c2a3716b5de6defe923b053c9.ViewCon

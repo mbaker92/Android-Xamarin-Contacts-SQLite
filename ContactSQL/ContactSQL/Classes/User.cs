@@ -31,6 +31,7 @@ namespace ContactSQL.Classes
     {
         private string DBName = "Contacts.db3";
         private string DBPath;
+        public string name = "";
 
         public User()
         {
@@ -38,17 +39,18 @@ namespace ContactSQL.Classes
         }
 
 
-        public ArrayAdapter<string> GetContactNames(ref ObservableCollection<string> temp)
+        public void GetContactNames(ref ObservableCollection<string> temp)
         {
+            temp.Clear();
             var db = new SQLiteConnection(DBPath);
             var NameList = db.Query<Classes.Contact>("Select Name From Contact");
             foreach(var s in NameList)
             {
                 temp.Add(s.Name);
             }
-            ArrayAdapter<string> adapter = new ArrayAdapter<string>(Android.App.Application.Context, Android.Resource.Layout.SimpleListItem1, temp);
+           // ArrayAdapter<string> adapter = new ArrayAdapter<string>(Android.App.Application.Context, Android.Resource.Layout.SimpleListItem1, temp);
             db.Close();
-            return adapter;
+
         }
 
         public string GetDBPath()

@@ -14,23 +14,21 @@ D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\SQLite-net.pdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\SQLite-net.xml
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\SQLiteNetExtensions.pdb
-D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\ContactSQL.csprojResolveAssemblyReference.cache
+D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\SQLiteNetExtensions.dll.mdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\ContactSQL.csproj.CoreCompileInputs.cache
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\ContactSQL.dll
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\ContactSQL.pdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\android\bin\ContactSQL.ContactSQL.apk
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\res\layout\createcontact.xml
+D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\res\layout\viewcontact.xml
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\res\layout\main.xml
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\res\values\strings.xml
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\R.cs.flag
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\uploadflags.txt
-D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\SQLiteNetExtensions.dll.mdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\ContactSQL.dll.mdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\android\assets\ContactSQL.dll.mdb
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\android\assets\SQLiteNetExtensions.dll.mdb
-D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\obj\Debug\res\layout\viewcontact.xml
 D:\Android Apps\Android-Xamarin-Contacts-SQLite\ContactSQL\ContactSQL\bin\Debug\ContactSQL.dll
-bin\Debug\SQLiteNetExtensions.dll.mdb
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb

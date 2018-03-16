@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using SQLite;
 using System.Collections.ObjectModel;
+using Android.Views;
 
 namespace ContactSQL
 {
@@ -22,11 +23,13 @@ namespace ContactSQL
     [Activity(Label = "ContactSQL", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        private ArrayAdapter<string> MyAdapater;
-        private Classes.User TempUser;
-        private ObservableCollection<string> ContactNames = new ObservableCollection<string>();
+        private static ArrayAdapter<string> MyAdapater;
+        private static Classes.User TempUser;
+        private static ObservableCollection<string> ContactNames = new ObservableCollection<string>();
         private ListView ContactList;
         private Button AddBut;
+
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -47,20 +50,27 @@ namespace ContactSQL
                 StartIntent();
             };
 
-            MyAdapater = TempUser.GetContactNames(ref ContactNames);
+            TempUser.GetContactNames(ref ContactNames);
+            MyAdapater = new ArrayAdapter<string>(Android.App.Application.Context, Android.Resource.Layout.SimpleListItem1, ContactNames);
             ContactList.Adapter = MyAdapater;
 
-            
-          //  ContactNames.CollectionChanged += new System.Collections.Specialized.NotifyCollectionChangedEventHandler(ContactAdded);
+            ContactList.ItemClick += ContactList_ItemClick;
+        }
 
-        }
-        /*
-        private void ContactAdded(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        private void ContactList_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            ContactList.Adapter = TempUser.GetContactNames(ref ContactNames);
+            var item = this.ContactList.Adapter.GetItem(e.Position);
+            Console.WriteLine(item.ToString());
+            TempUser.name = item.ToString();
+            Classes.InitialController.Save(TempUser);
+
+
+            //var intent = new Intent(this, typeof(ViewContact));
+
+            StartActivity(typeof(ViewCon));
         }
-        */
- 
+
+
         protected override void OnDestroy()
         {
             Classes.InitialController.Save(TempUser);
@@ -119,7 +129,18 @@ namespace ContactSQL
             prefs.Edit().PutInt(PrefVersionCodeKey, currentVersionCode).Apply();
 
         }
+
+        public static void UpdateListview()
+        {
+            TempUser.GetContactNames(ref ContactNames);
+            MyAdapater.Clear();
+            MyAdapater.AddAll(ContactNames);
+            MyAdapater.NotifyDataSetChanged();
+        }
+
+
     }
+
 
 }
 

@@ -54,14 +54,7 @@ namespace ContactSQL
             Classes.InitialController.Save(TempUser);
             base.OnDestroy();
         }
-
-        public override void OnBackPressed()
-        {
-            var intent = new Intent(this, typeof(MainActivity));
-            intent.AddFlags(ActivityFlags.ClearTop);
-            StartActivity(intent);
-        }
-
+ 
 
         private void AddContact()
         {
@@ -105,7 +98,8 @@ namespace ContactSQL
             // Close Database
             db.Close();
 
+            MainActivity.UpdateListview();
         }
-
+        
     }
 }
